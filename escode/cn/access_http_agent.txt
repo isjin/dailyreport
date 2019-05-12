@@ -1,0 +1,1 @@
+{"size": 0,"query": {"filtered": {"query": {"query_string": {"query": "*","analyze_wildcard": true}},"filter": {"bool": {"must": [{"range": {"@timestamp": {"gte": date_timestamp2,"lte": date_timestamp1,"format": "epoch_millis"}}}],"must_not": []}}}},"aggs": {"2": {"terms": {"field": "http_user_agent.raw","size": 10,"order": {"_count": "desc"}}}}}

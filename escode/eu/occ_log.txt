@@ -1,0 +1,1 @@
+{"query": {"bool": {"must": [{"query_string": {"query": "type:app","analyze_wildcard": true}},{"range": {"@timestamp": {"gte": date_timestamp2,"lte": date_timestamp1,"format": "epoch_millis"}}}],"must_not": []}},"size": 0,"_source": {"excludes": []},"aggs": {}}

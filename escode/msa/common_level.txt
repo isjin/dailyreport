@@ -1,0 +1,1 @@
+{"size": 0,"query": {"bool": {"must": [{"query_string": {"query": "*","analyze_wildcard": true}},{"range": {"@timestamp": {"gte": date_timestamp2,"lte": date_timestamp1,"format": "epoch_millis"}}}],"must_not": []}},"_source": {"excludes": []},"aggs": {"2": {"terms": {"field": "level","size": 10,"order": {"_count": "desc"}}}}}

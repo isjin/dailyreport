@@ -1,0 +1,1 @@
+{"size": 0,"query": {"bool": {"must": [{"match_all": {}},{"match_phrase": {"host": {"query": "go.sapanywhere.com"}}},{"range": {"@timestamp": {"gte": date_timestamp2,"lte": date_timestamp1,"format": "epoch_millis"}}}],"must_not": [{"match_phrase": {"userAgent": {"query": "Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)"}}}]}},"_source": {"excludes": []},"aggs": {}}
